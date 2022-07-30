@@ -1,0 +1,14 @@
+himikali = int(input())
+markeri = int(input())
+preparat = int(input())
+procent_namalenie = int(input())
+
+cena_na_himikali = 5.80
+cena_na_markeri = 7.20
+cena_na_preparata = 1.20
+cena_na_wsichki_materiali = float(himikali * cena_na_himikali) + float(markeri * cena_na_markeri) + float(preparat * cena_na_preparata)
+procent_namalenie1 = float(procent_namalenie / 100)
+
+cena_s_namalenie = cena_na_wsichki_materiali - (cena_na_wsichki_materiali * procent_namalenie1)
+
+print(cena_s_namalenie)
