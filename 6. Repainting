@@ -1,0 +1,14 @@
+neobhodimo_col_najlon = int(input())
+neobhodimo_col_boq = int(input())
+col_razdelitel = int(input())
+chasowete = int(input())
+
+suma_za_najlon = (neobhodimo_col_najlon + 2) * 1.5
+suma_za_boq = (neobhodimo_col_boq + (neobhodimo_col_boq / 100 * 10)) * 14.50
+suma_za_rasdelitel = col_razdelitel * 5
+torbichki = 0.40
+obshta_suma = suma_za_najlon + suma_za_boq + suma_za_rasdelitel + torbichki
+
+zaplata_na_chasove = (obshta_suma / 100 * 30) * chasowete
+
+print(obshta_suma + zaplata_na_chasove)
