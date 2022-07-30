@@ -1,0 +1,8 @@
+broj_na_stranici = int(input())
+stranici_za_chas = int(input())
+broqt_na_dnite = int(input())
+
+obzhto_wreme_za_knigata = broj_na_stranici / stranici_za_chas
+neobhodimite_chasowe_na_den = int(obzhto_wreme_za_knigata / broqt_na_dnite)
+
+print(neobhodimite_chasowe_na_den)
