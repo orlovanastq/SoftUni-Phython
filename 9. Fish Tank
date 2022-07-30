@@ -1,0 +1,11 @@
+dulzhina = int(input())
+shirina = int(input())
+visochina = int(input())
+procent = float(input())
+
+obem_na_akvarium = dulzhina * shirina * visochina
+obem_w_litri = obem_na_akvarium / 1000
+zaeto_prostranstvo = procent /100
+nuzhni_litri = obem_w_litri * (1 - zaeto_prostranstvo)
+
+print(nuzhni_litri)
