@@ -1,0 +1,15 @@
+broj_pile = int(input())
+broj_riba = int(input())
+broj_vegan = int(input())
+
+cena_pile = broj_pile * 10.35
+cena_riba = broj_riba * 12.40
+cena_vegan = broj_vegan *8.15
+obshta_cena = cena_pile + cena_riba + cena_vegan
+
+desert = obshta_cena / 100 * 20
+dostavka = 2.50
+
+poruchka = obshta_cena + desert + dostavka
+
+print(poruchka)
