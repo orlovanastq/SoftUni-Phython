@@ -1,0 +1,8 @@
+godishna_taksa = int(input())
+kecove = godishna_taksa - (godishna_taksa / 100 * 40)
+ekip = kecove - (kecove / 100 * 20)
+topka = ekip / 4
+eksasoari = topka / 5
+
+obshta_cena = godishna_taksa + kecove + ekip + topka + + eksasoari
+print(obshta_cena)
