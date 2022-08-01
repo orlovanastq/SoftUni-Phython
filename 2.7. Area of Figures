@@ -1,0 +1,27 @@
+import math
+
+figura = input()
+sq = 'square'
+rec = 'rectangle'
+cir = 'circle'
+tri = 'triangle'
+
+if figura == sq:
+    stranata_sq = float(input())
+    formula1 = stranata_sq * stranata_sq
+
+    print(f"{formula1:.3f}")
+elif figura == rec:
+    stranata_rec1 = float(input())
+    stranata_rec2 = float(input())
+    formula2 = stranata_rec1 * stranata_rec2
+    print(f"{formula2:.3f}")
+elif figura == cir:
+    stranata_cir = float(input())
+    formula3 = math.pi * stranata_cir * stranata_cir
+    print(f"{formula3:.3f}")
+elif figura == tri:
+    dulzhina = float(input())
+    visochina = float(input())
+    formula4 = (dulzhina * visochina) / 2
+    print(f"{formula4:.3f}")
