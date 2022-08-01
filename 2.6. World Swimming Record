@@ -1,0 +1,20 @@
+from math import floor
+record_sec = float(input())
+meters_dis = float(input())
+sec_per_meters = float(input())
+
+
+trqbva_da_prepluva = meters_dis * sec_per_meters
+
+dobaweni_sec = (floor(meters_dis / 15) * 12.5)
+
+obshto_vreme = trqbva_da_prepluva + dobaweni_sec
+
+nedostigashto_vreme = obshto_vreme - record_sec
+
+
+if record_sec > obshto_vreme:
+    print(f'Yes, he succeeded! The new world record is {obshto_vreme:.2f} seconds.')
+
+else:
+    print(f'No, he failed! He was {abs(nedostigashto_vreme):.2f} seconds slower.')
