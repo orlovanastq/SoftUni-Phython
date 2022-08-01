@@ -1,0 +1,29 @@
+prise_ex = float(input())
+puzzels_count = int(input())
+doll_count = int(input())
+bears_count = int(input())
+minions_count = int(input())
+trucks_count = int(input())
+
+puzzel = 2.60
+doll = 3
+bear = 4.10
+minion = 8.20
+truck = 2
+
+total_price = (puzzels_count * puzzel) + (doll_count * doll) + (bears_count * bear) + (minions_count * minion) + (trucks_count * truck)
+total_items = puzzels_count + doll_count + bears_count + minions_count + trucks_count
+sale = 0
+if total_items >= 50:
+    sale = total_price / 4
+
+final_prise = total_price - sale
+rent = final_prise / 10
+pechalba = final_prise - rent
+money_left = pechalba - prise_ex
+
+
+if pechalba >= prise_ex:
+    print(f'Yes! {money_left:.2f} lv left.')
+elif pechalba < prise_ex:
+    print(f'Not enough money! {abs(money_left):.2f} lv needed.')
